@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Quản lý Sinh Viên</string>
+    <string name="student_list">Danh sách Sinh viên</string>
+    <string name="add_student">Thêm Sinh viên</string>
+    <string name="student_detail">Chi tiết Sinh viên</string>
+    <string name="edit_student">Sửa thông tin Sinh viên</string>
+    <string name="name">Họ Tên</string>
+    <string name="student_id">Mã số Sinh viên</string>
+    <string name="email">Email</string>
+    <string name="avatar_url">Link ảnh Avatar</string>
+    <string name="save">Lưu</string>
+    <string name="edit">Sửa</string>
+    <string name="delete">Xoá</string>
+    <string name="cancel">Hủy</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="confirm_edit">Bạn có muốn sửa thông tin Sinh viên này không?</string>
+    <string name="confirm_delete">Bạn có muốn xoá Sinh viên này không?</string>
+    <string name="confirm_add">Bạn có muốn thêm Sinh viên này không?</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="empty_list">Chưa có sinh viên nào.</string>
+</resources>

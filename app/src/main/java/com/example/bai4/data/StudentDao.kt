@@ -1,0 +1,28 @@
+package com.example.bai4.data
+
+import androidx.room.Dao
+import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import androidx.room.Update
+import kotlinx.coroutines.flow.Flow
+
+@Dao
+@JvmSuppressWildcards
+interface StudentDao {
+    @Query("SELECT * FROM students ORDER BY id DESC")
+    fun getAllStudents(): Flow<List<Student>>
+
+    @Query("SELECT * FROM students WHERE id = :id")
+    suspend fun getStudentById(id: Int): Student?
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertStudent(student: Student): Long
+
+    @Update
+    suspend fun updateStudent(student: Student): Int
+
+    @Delete
+    suspend fun deleteStudent(student: Student): Int
+}
